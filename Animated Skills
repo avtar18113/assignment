@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Skills Bar using HTML and CSS</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            display: flex;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+            margin: 10px;
+            padding: 10px;
+            width: 20%;
+        }
+
+        p {
+            padding-left: 20px;
+            height: 40px;
+            margin: 5px;
+            color: dark black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .row {
+            width: 80%;
+        }
+
+        .progress {
+            background: rgba(255, 255, 255, 0.1);
+            justify-content: flex-start;
+            border-radius: 100px;
+            align-items: center;
+            position: relative;
+            padding: 0 5px;
+            display: flex;
+            height: 40px;
+            width: 100%;
+        }
+
+        .progress-value {
+
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            background: #fff;
+            height: 30px;
+            width: 0;
+        }
+
+        .html {
+            animation: html 3s normal forwards;
+        }
+
+        .css {
+            animation: cs 3s normal forwards;
+        }
+
+        .bs {
+            animation: bs 3s normal forwards;
+        }
+
+        .js {
+            animation: js 3s normal forwards;
+        }
+
+        /* ---------------HTML animation --------- */
+        @keyframes html {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 55%;
+            }
+        }
+
+        /* ---------------CSS animation --------- */
+        @keyframes cs {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 70%;
+            }
+        }
+
+        /* ---------------BS animation --------- */
+        @keyframes bs {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 89%;
+            }
+        }
+
+        /* ---------------JS animation --------- */
+        @keyframes js {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 63%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <!-- -----------HTML----------- -->
+        <h1>HTML</h1>
+        <div class="progress">
+            <div class="progress-value html">
+                <p>55%</p>
+            </div>
+        </div>
+        <!-- -----------CSS----------- -->
+        <h1>CSS</h1>
+        <div class="progress">
+            <div class="progress-value css">
+                <p>70%</p>
+            </div>
+        </div>
+        <!-- -----------BootStrap----------- -->
+        <h1>BootStrap</h1>
+        <div class="progress">
+            <div class="progress-value bs">
+                <p>89%</p>
+            </div>
+        </div>
+        <!-- -----------JavaScript----------- -->
+        <h1>JavaScript</h1>
+        <div class="progress">
+            <div class="progress-value js">
+                <p>63%</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
